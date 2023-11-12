@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Clash of Clans - Characters Info Website using Glassmorphism</title>
+        <link rel="stylesheet" href="./style.css">
+        <!-- Owl Carousel CSS -->
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
+    </head>
+    <body>
+        <div class="container">
+
+            <!-- START OF HEADER -->
+            <div class="header">
+                <img src="./images/logo.png" alt>
+                <ul class="mav">
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./assets/troops.html">Troops</a></li>
+                    <li><a href="./assets/darktroops.html">Dark Troops</a></li>
+                    <li><a href="./assets/heros.html">Heros</a></li>
+                    <li><a href="./pets.html">Pets</a></li>
+                    <li><a href="./supertroops.html">Super Troops</a></li>
+                </ul>
+                <div class="menubar">
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                </div>
+            </div>
+            <!-- END OF HEADER -->
+
+            <!-- START OF Carousel -->
+
+            <div id="myCarousel" class="owl-carousel owl-theme swiper">
+                <div class="box">
+                    <div class="card">
+                        <img src="./images/home/Dragon_Rider.webp" alt>
+                        <h1>Elixir Troops</h1>
+                        <p>Elixir troops are trained in the regular Barracks. Upgrading the Barracks can unlock more Elixir troops. You can also research Elixir troops in the Laboratory to make them more powerful.</p>
+                        <a href="./assets/troops.css">View All</a>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="card">
+                        <img src="./images/home/Bowler.png" alt>
+                        <h1>Dark Elixir Troops</h1>
+                        <p>Dark Elixir troops are troops that are unlocked and trained in the Dark Barracks. Like with Elixir troops, you can research Dark Elixir troops in the Laboratory to make them more powerful.</p>
+                        <a href="./assets/darktroops.html">View All</a>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="card">
+                        <img src="./images/home/Mighty_Yak.webp" alt>
+                        <h1>Pets</h1>
+                        <p>Pets that can be assigned to different Heroes to support them in battle. Each Pet can only be assigned to one Hero at a time. Pets are immortal, only summoned once, and do not require regeneration after being defeated.</p>
+                        <a href="./assets/pets.html">View All</a>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="card">
+                        <img src="./images/home/Queen.png" alt>
+                        <h1>Heros</h1>
+                        <p>Hero units are the most powerful troops in the game. They are immortal, meaning you only have to train them once. However, if they have been defeated, they may have to regenerate in order to fight again.</p>
+                        <a href="./assets/heros.html">View All</a>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="card">
+                        <img src="./images/home/Super_Hog_Rider.webp"
+                            alt>
+                        <h1>Super Troops</h1>
+                        <p>Super Troops are troops that are more powerful troops than their original counterparts and have special abilities. You can temporarily boost the original into their Super Troop counterpart with Dark Elixir or a Super Potion</p>
+                        <a href="./assets/supertroops.html">View All</a>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="card">
+                        <img src="./images/home/Battle_Machine.webp"
+                            alt>
+                        <h1>Battle Machine</h1>
+                        <p>"The Master Builder's prize invention smashes enemy buildings to bits. Unlock the Electric Hammer ability to give opponents a real pounding!"</p>
+                        <a href="./assets/heros.html">View All</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- jQuery -->
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <!-- Owl Carousel JS -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+        <script>
+        $(document).ready(function () {
+        $('#myCarousel').owlCarousel({
+        items: 3, 
+        loop: false, 
+        margin: 20, 
+        nav: true, 
+        navText: [
+          "<i class='fas fa-chevron-left'></i>",
+          "<i class='fas fa-chevron-right'></i>",
+        ],  
+        responsive: {
+          0: {
+            items: 1, 
+          },
+          700: {
+            items: 2, 
+          },
+          1000: {
+            items: 3,
+          },},
+        });});
+    
+    /* RESPONSIVE NAVBAR SCRIPT */
+    const menu = document.querySelector('.menubar')
+    const menuList = document.querySelector('.header ul')
+    menu.addEventListener('click',()=>{
+    menuList.classList.toggle('showmenu')
+    })
+    </script>
+
+    </body>
+</html>

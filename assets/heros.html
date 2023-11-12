@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Clash of Clans - Characters Info Website using Glassmorphism</title>
+        <link rel="stylesheet" href="./heros.css">
+        <!-- Owl Carousel CSS -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
+    </head>
+    <body>
+        <div class="container">
+
+            <!-- START OF HEADER -->
+            <div class="header">
+                <img src="../images/logo.png" alt>
+                <ul class="mav">
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="./troops.html">Troops</a></li>
+                    <li><a href="./darktroops.html">Dark Troops</a></li>
+                    <li><a href="./heros.html">Heros</a></li>
+                    <li><a href="./pets.html">Pets</a></li>
+                    <li><a href="./supertroops.html">Super Troops</a></li>
+                </ul>
+                <div class="menubar">
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                </div>
+            </div>
+            <!-- END OF HEADER -->
+
+            <!-- START OF Carousel -->
+
+            <div id="myCarousel" class="owl-carousel owl-theme swiper">
+
+                <div class="box">
+                    <img src="../images/heros/Barbarian_King.webp" alt="">
+                    <h3>Barbarian King</h3>
+                    <div class="content">
+                        <p>"This colossal menace soaks up huge amounts of damage and bashes anything in his path. He guards his territory fiercely when defending, and can launch into a devastating rage when attacking once his Iron Fist ability is unlocked!"</p>
+                        <div class="bottom">
+                            <p>Speed - 16</p>
+                            <p>Target - Grounde</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="box">
+                    <img src="../images/heros/Archer_Queen.webp" alt="">
+                    <h3>Archer Queen</h3>
+                    <div class="content">
+                        <p>"This graceful huntress is a master of destructive force, though modest in health. She snipes targets in her territory when defending, and can summon stealth and terrifying damage when attacking once her Royal Cloak ability is unlocked!"</p>
+                        <div class="bottom">
+                            <p>Speed - 24</p>
+                            <p>Target - Ground & Air</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="box">
+                    <img src="../images/heros/Grand_Warden.webp" alt="">
+                    <h3>Grand Warden</h3>
+                    <div class="content">
+                        <p>"This veteran battle-scholar seeks out groups of friendly troops to fight behind and boost with his Life Aura, and assumes the form of a tower on defense. Attacking, he can walk over Walls or fly high, and can make nearby troops immune to damage once his Eternal Tome ability is unlocked!"</p>
+                        <div class="bottom">
+                            <p>Speed - 16</p>
+                            <p>Target - Ground & Air</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="box">
+                    <img src="../images/heros/Royal_Champion.webp" alt="">
+                    <h3>Royal Champion</h3>
+                    <div class="content">
+                        <p>"Over the Wall and at them! The Royal Champion is only afraid of four things, and the enemy isn't one of them. She attacks with her spear at short range and throws her shield to take down defenses once her Seeking Shield ability is unlocked!"</p>
+                        <div class="bottom">
+                            <p>Speed - 16</p>
+                            <p>Target - Ground</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="box">
+                    <img src="../images/heros/Battle_Machine.webp" alt="">
+                    <h3>Battle Machine</h3>
+                    <div class="content">
+                        <p>"The Master Builder's prize invention smashes enemy buildings to bits. What better way is there to show who's the best builder around? Unlock the Electric Hammer ability to give opponents a real pounding!"</p>
+                        <div class="bottom">
+                            <p>Speed - 24</p>
+                            <p>Damages - Air</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="box">
+                    <img src="../images/heros/Battle_Copter.webp" alt="">
+                    <h3>Battle Copter</h3>
+                    <div class="content">
+                        <p>"Get to the Copter! Tired of hammering through Walls, Master Builder's next-generation flying machine lets him soar over them. The Battle Copter attacks from afar with its powerful cannons; or can get up close and personal when using its Bomb Rush ability."</p>
+                        <div class="bottom">
+                            <p>Speed - 14</p>
+                            <p>Damages - Ground & Air</p>
+                        </div>
+                    </div>
+                </div> 
+
+            </div>
+        </div>
+
+        <!-- jQuery -->
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <!-- Owl Carousel JS -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+        <script>
+        $(document).ready(function () {
+        $('#myCarousel').owlCarousel({
+        items: 2, 
+        loop: false, 
+        margin: 20, 
+        nav: true, 
+        navText: [
+          "<i class='fas fa-chevron-left'></i>",
+          "<i class='fas fa-chevron-right'></i>",
+        ],  
+        responsive: {
+          0: {
+            items: 1, 
+          },
+          700: {
+            items: 1, 
+          },
+          1000: {
+            items: 2,
+          },},
+        });});
+    
+    /* RESPONSIVE NAVBAR SCRIPT */
+    const menu = document.querySelector('.menubar')
+    const menuList = document.querySelector('.header ul')
+    menu.addEventListener('click',()=>{
+    menuList.classList.toggle('showmenu')
+    })
+    </script>
+
+    </body>
+</html>
